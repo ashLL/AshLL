@@ -17,6 +17,32 @@ body{
   width: 20px;
   
 }
+.home-arrow-down {
+  animation: arrow-down 2s infinite;
+  background: transparent;
+  border: none;
+}
+
+.down-arrow{
+  font-size: 3em;
+}
+
+@keyframes arrow-down {
+  0%,100%,20%,50% {
+    transform: translateY(0)
+}
+
+40% {
+    transform: translateY(-30px)
+}
+
+60% {
+    transform: translateY(-17px)
+}
+80% {
+    transform: translateY(5px)
+}
+}
 .center {
   text-align:center;
   width: 30%;
