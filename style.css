@@ -1,14 +1,26 @@
 html {
   font-family: 'Source Sans Pro', sans-serif;
 }
-
 body{
   background-color: #002938;
 }
-
-.center {
-  margin-top: 40vh;
+.links {
+  display: flex;
+  justify-content: space-around;
   text-align:center;
+  width: 15%;
+  margin: 0 auto 0 auto;
+}
+.links a {
+  font-size: 2em;
+  color: pink;
+  width: 20px;
+  
+}
+.center {
+  text-align:center;
+  width: 30%;
+  margin: 40vh auto 0 auto;
 }
 
 .center p{
@@ -18,11 +30,11 @@ body{
   color:white;
 }
 
-.center:hover .gay{
+.center:hover .neato{
   opacity: 1;
 }
 
-.gay{
+.neato{
   color: pink !important;
   transition: opacity 0.5s;
   opacity: 0;
