@@ -1,11 +1,30 @@
-.css-selector {
+html {
   font-family: 'Source Sans Pro', sans-serif;
 }
-p {
-    margin-top: 40vh;
-font-size: 180%;
-font-weight: bold;
-font-family:Source Sans Pro;
-text-align:center;
-color:white;
+
+body{
+  background-color: #000c11;
+}
+
+.center {
+  margin-top: 40vh;
+  text-align:center;
+}
+
+.center p{
+  display: inline-block;
+  font-size: 180%;
+  font-weight: bold;
+  color:white;
+}
+
+.center:hover .gay{
+  opacity: 1;
+}
+
+.gay{
+  color: pink !important;
+  transition: opacity 0.5s;
+  opacity: 0;
+  margin: 0 5px;
 }
