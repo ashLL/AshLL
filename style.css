@@ -8,23 +8,30 @@ body{
   display: flex;
   justify-content: space-around;
   text-align:center;
-  width: 15%;
-  margin: 0 auto 0 auto;
+  width: 5%;
+  margin: 0vh auto 0 auto;
 }
 .links a {
   font-size: 2em;
   color: pink;
   width: 20px;
-  
 }
 .home-arrow-down {
   animation: arrow-down 2s infinite;
-  background: transparent;
+  margin: 0;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  background: none;
+  outline: none;
   border: none;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .down-arrow{
   font-size: 3em;
+  color: pink;
 }
 
 @keyframes arrow-down {
@@ -33,29 +40,32 @@ body{
 }
 
 40% {
-    transform: translateY(90px)
+    transform: translateY(-20px)
 }
 
 60% {
-    transform: translateY(90px)
+    transform: translateY(-20px)
 }
 80% {
-    transform: translateY(30px)
+    transform: translateY(0px)
+}
+90% {
+  transform: translateY(0px)
 }
 }
 .center {
-  text-align:center;
   width: 30%;
-  margin: 40vh auto 0 auto;
-}
-
-.center p{
-  display: inline-block;
-  font-size: 180%;
-  font-weight: bold;
-  color:white;
-}
-
+    margin: 40vh auto 0 auto;
+    text-align: center;
+      
+  }
+  
+  .center p{
+    display: inline-block;
+    font-size: 180%;
+    font-weight: bold;
+    color:white;
+  }
 .center:hover .neato{
   opacity: 1;
 }
