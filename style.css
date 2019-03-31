@@ -7,26 +7,49 @@ body{
 .links {
   display: flex;
   justify-content: space-around;
-  text-align:center;
-  width: 5%;
-  margin: 0vh auto 0 auto;
+  width: 285px;
+  margin-top: 12px;
+  position: relative;
+  top: 1.8vh;
+  font-size: 120%;
+}
+.hw {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  padding-bottom: 12.5vh;
+}
+.hw {
+
+  position: relative;
+  top: 4vh;
 }
 .links a {
   font-size: 2em;
   color: pink;
   width: 20px;
+  z-index: 9999;
+  margin: 0 auto;
+}
+.home-arrow-down:focus {
+  cursor: 0;
 }
 .home-arrow-down {
-  animation: arrow-down 2s infinite;
-  margin: 0;
-  position: absolute;
-  top: 90%;
-  left: 50%;
+  animation: arrow-down 2.5s infinite;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background: none;
-  outline: none;
   border: none;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  position: relative;
+  outline: none;
+  top: 42vh;
+  z-index: 1;
+  height: 10px;
+  width: 10px;
 }
 
 .down-arrow{
@@ -35,25 +58,28 @@ body{
 }
 
 @keyframes arrow-down {
-  0%,100%,20%,50% {
+  0%,100%,20% {
     transform: translateY(0)
 }
 
 40% {
     transform: translateY(-20px)
 }
-
-60% {
-    transform: translateY(-20px)
-}
-80% {
+50% {
     transform: translateY(0px)
 }
-90% {
+60% {
+    transform: translateY(-16px)
+}
+70% {
   transform: translateY(0px)
+}
+80% {
+    transform: translateY(-10px)
 }
 }
 .center {
+  font-size: 180%;
   width: 30%;
     margin: 40vh auto 0 auto;
     text-align: center;
