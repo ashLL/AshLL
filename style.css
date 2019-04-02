@@ -3,8 +3,7 @@ html {
 }
 body{
   background-color: #002938;
-  min-height: 200vh;
-	max-height: 200vh;
+  
 	margin: 0;
   padding: 0;
 }
@@ -20,9 +19,7 @@ body{
   top: 1.8vh;
   font-size: 1.4vw;
 }
-.mobile-wrapper {
-	display: none
-}
+
 .hw {
   
   display: flex;
@@ -30,15 +27,15 @@ body{
   justify-content: center;
   align-items: center;
   height: 40vh;
-  padding-bottom: 12.5vh;
+  padding-bottom: 0vh;
 }
 .hw {
 
   position: relative;
-  top: 4vh;
+  top: 0.0009vw;
 }
 .links a {
-  font-size: 2em;
+  font-size: 6vh;
   color: pink;
   width: 20px;
   z-index: 9999;
@@ -57,7 +54,7 @@ body{
   border: none;
   position: relative;
   outline: none;
-  top: 36vh;
+  top: 85%;
   z-index: 1;
   height: 10px;
   width: 10px;
@@ -90,9 +87,10 @@ body{
 }
 }
 .center {
+  top: 4vw;
   font-size: 2vw;
   width: 50%;
-    margin: 40vh auto 0 auto;
+    margin: 14vw auto 0 auto;
     text-align: center;
       
   }
